@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple go</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6 5%;
+        }
+
+        nav {
+            background-color: #666;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .ul a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .ul a:hover {
+            background-color: red;
+        }
+
+        .button {
+            background-color: #5a73aa;
+            border: none;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+
+        button:hover {
+            transform: translate(-2px);
+            background-color: red;
+        }
+
+        /* Header Styles */
+        .hero-section {
+            text-align: center;
+            padding: 5rem 5%;
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .highlight {
+            color: goldenrod;
+        }
+
+        .content-section {
+            padding: 4rem 5%;
+            display: grid;
+            gap: 3rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .news-date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            background-color: var(--light-bg);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+
+        .newsletter-form {
+            max-width: 500px;
+            margin: 2rem auto;
+            display: flex;
+            gap: 1rem;
+        }
+
+        span {
+            color: goldenrod;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #333, #444);
+            color: #fff;
+            padding: 40px 5%;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            /* Ensure it spans the full width */
+        }
+
+        .fot {
+            width: 100%;
+            /* Ensures the footer takes the full width */
+            padding: 0 20px;
+            /* Add some padding to prevent content from sticking to the edges */
+            margin: 0 auto;
+        }
+
+        .foter-links {
+            margin-top: 20px;
+        }
+
+        .foter-links a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .foter-links a:hover {
+            text-decoration: underline;
+            color: goldenrod;
+            /* Hover color */
+        }
+
+        /* Social media icons */
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: goldenrod;
+            /* Hover color */
+            transform: translateY(-3px);
+        }
+
+        /* Footer bottom section */
+        footer .footer-bottom {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        footer .footer-bottom a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        footer .footer-bottom a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbaar">
+        <ul class="ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Servece</a></li>
+        </ul>
+            <button class="button button4"> Sin Up</button>
+    </nav>
+    <section class="hero-section">
+        <h1>
+            <span class="highlight">Here</span> Are The most .<br>
+            wisted <span class="highlight">Temple</span> in India
+        </h1>
+    </section>
+    <main class="content-section">
+        <h2>The <span> temples</span></h2>
+        <div class="feature-grid">
+            <article class="news-card">
+                <img src="Kedarnath.jpg" alt="Training Model">
+                <a href="" target="_blank">
+                    <h3> Kedarnath temple is one of the oldest temples in the country that dates back to the 8th
+                        century.</h3>
+                </a>
+                <p class="news-date">Feb 21, 2025</p>
+                <p>Kedarnath temple is one of the oldest temples in the country that dates back to the 8th century. The
+                    deity worshipped here is Lord Shiva.</p>
+            </article>
+
+            <article class="news-card">
+                <img src="Jagannath-Temple.jpg" alt="DeepSeek Model">
+                <a href="https://www.deepseek.com/" target="_blank">
+                    <h3> Jagannath Temple in Puri is one of the most famous temples in India. The deity worshipped here
+                        is Lord Jagannath (Krishna).</h3>
+                </a>
+                <p class="news-date">Feb 2, 2025</p>
+                <p>Jagannath Temple in Puri is one of the most famous temples in India. The deity worshipped here is
+                    Lord Jagannath (Krishna).</p>
+            </article>
+            <article class="news-card">
+                <img src="Lingaraja.jpg" alt="DeepSeek Model">
+                <a href="https://www.deepseek.com/" target="_blank">
+                    <h3> The biggest temple in India, Lingaraja is dedicated to Hindu deities Vishnu and Shiva the
+                        temple was invitvd.</h3>
+                </a>
+                <p class="news-date">Feb 2, 2025</p>
+                <p>The biggest temple in India, Lingaraja is dedicated to Hindu deities Vishnu and Shiva.</p>
+            </article>
+            <article class="news-card">
+                <img src="Rameshwaram.jpg" alt="DeepSeek Model">
+                <a href="https://www.deepseek.com/" target="_blank">
+                    <h3> Rameshwaram is one among the most famous temples in South India</h3>
+                </a>
+                <p class="news-date">Feb 2, 2025</p>
+                <p>Rameshwaram is one among the most famous temples in South India. Located in Tamil Nadu, you will find
+                    several shrines in this temple.</p>
+            </article>
+        </div>
+        <footer>
+            <div class="fot">
+                <p>&copy; 2025 Your Website. All rights reserved.</p>
+                <div class="foter-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Team Service</a>
+                    <a href="#">Contact Us</a>
+                </div>
+
+                <!-- Social Media Icons Section -->
+                <div class="social-icons">
+                    <a href="#" target="_blank">🌐</a> <!-- Replace with actual social media links/icons -->
+                    <a href="#" target="_blank">🐦</a>
+                    <a href="#" target="_blank">📘</a>
+                    <a href="#" target="_blank">📷</a>
+                </div>
+
+                <!-- Footer bottom -->
+                <div class="footer-bottom">
+                    <p>Designed by <a href="#"> Rohit Pathak</a></p>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
